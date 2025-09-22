@@ -18,7 +18,6 @@
 [![Gemini](https://img.shields.io/badge/AI-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 [![AssemblyAI](https://img.shields.io/badge/Audio%20Analysis-AssemblyAI-8A2BE2?style=for-the-badge&logo=soundcharts&logoColor=white)](https://www.assemblyai.com/)
 [![Docker](https://img.shields.io/badge/Containerized-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![S3](https://img.shields.io/badge/Storage-AWS%20S3-FF9900?style=for-the-badge&logo=amazon-s3&logoColor=white)](https://aws.amazon.com/s3/)
 [![GitHub](https://img.shields.io/badge/Code%20Hosted%20On-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 
@@ -93,7 +92,6 @@ The platform evaluates **technical correctness, clarity, and completeness** of a
 | **📝 Text Analysis Service** | `4002` | Evaluates clarity, correctness, completeness | Node.js, Gemini API |
 | **🎙️ Audio Analysis Service** | `4003` | Analyzes tone, pauses, hesitations | Node.js, AssemblyAI |
 | **🗄️ Storage** | — | Stores audio files (Blob/S3) | AWS S3 / Azure Blob |
-| **📊 Database** | — | Stores sessions, Q&A, scores | PostgreSQL / MongoDB |
 
 ---
 
@@ -114,10 +112,9 @@ The platform evaluates **technical correctness, clarity, and completeness** of a
 | **TailwindCSS** | Styling |
 | **react-speech-recognition** | Real-time speech-to-text |
 
-### 🗄️ **Database & Storage**
+### 🗄️ **Storage**
 | Technology | Purpose |
 |------------|---------|
-| **PostgreSQL** | Store interview data & results |
 | **AWS S3 / Azure Blob** | Store user audio recordings |
 
 ---
@@ -128,7 +125,6 @@ The platform evaluates **technical correctness, clarity, and completeness** of a
 - Node.js (v18+)
 - npm / pnpm
 - Docker
-- PostgreSQL or MongoDB instance
 - AssemblyAI + Gemini API keys
 
 ### ⚡ Installation
@@ -159,3 +155,4 @@ cd text-analysis-service && npm run dev  # port 4002
 
 # Audio Analysis
 cd audio-analysis-service && npm run dev  # port 4003
+```
