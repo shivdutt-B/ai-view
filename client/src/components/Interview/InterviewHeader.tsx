@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Clock, User, MessageSquare, Zap } from 'lucide-react';
 
 interface InterviewHeaderProps {
   role: string;
@@ -13,7 +12,7 @@ const InterviewHeader: React.FC<InterviewHeaderProps> = ({
   currentQuestionIndex, 
   totalQuestions 
 }) => {
-  const [sessionTime, setSessionTime] = useState(0);
+  const [_, setSessionTime] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -22,12 +21,6 @@ const InterviewHeader: React.FC<InterviewHeaderProps> = ({
 
     return () => clearInterval(timer);
   }, []);
-
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${mins}:${secs.toString().padStart(2, '0')}`;
-  };
 
   const progressPercentage = totalQuestions > 0 ? ((currentQuestionIndex + 1) / totalQuestions) * 100 : 0;
 

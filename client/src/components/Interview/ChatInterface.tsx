@@ -81,10 +81,10 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({
     }
   }
 
-  // Auto-scroll to bottom when live transcription changes or messages update
+  // Auto-scroll to bottom ONLY when displayMessages changes (not on live transcription or recording)
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [displayMessages.length, liveTranscription, isRecording]);
+  }, [displayMessages.length]);
 
   // Live Transcription Indicator component
   const LiveTranscriptionIndicator = () => (

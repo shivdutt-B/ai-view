@@ -37,8 +37,6 @@ const InterviewPage: React.FC = () => {
     if (typeof resetInterview === 'function') {
       resetInterview();
     }
-    // If no resetInterview, manually reset states here if needed
-    // ...existing code...
   }, []);
 
   const handleReportGenerated = async () => {
