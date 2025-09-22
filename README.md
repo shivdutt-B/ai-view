@@ -80,7 +80,7 @@ The platform evaluates **technical correctness, clarity, and completeness** of a
 ## 🏛️ Architecture Overview
 
 <div align="center">
-<img src="./readme.assets/architecture.png" alt="AI Interview Architecture" width="1100px" height="800px" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<img src="https://github.com/shivdutt-B/ai-view/blob/main/readme.assets/architecture.svg" alt="AI Interview Architecture" width="1100px" height="800px" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
 ### ⚙️ Microservices Breakdown

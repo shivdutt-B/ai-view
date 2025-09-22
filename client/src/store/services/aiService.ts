@@ -11,7 +11,7 @@ export const generateInterviewQuestions = async (
   try {
     const apiKey = getEnvVar('VITE_GEMINI_API_KEY');
     
-    const systemPrompt = `You are an expert technical interviewer. Generate exactly 8 interview questions for a ${role} developer position.
+    const systemPrompt = `You are an expert technical interviewer. Generate exactly 5 interview questions for a ${role} developer position.
 
 ${jobDescription ? `Job Description: ${jobDescription}\n\n` : ''}
 
